@@ -728,39 +728,44 @@ button,
   color: #15ab07;
 }
 
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
+.header {
+  padding: 40px 0;
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 20px 0;
   }
-*/
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
+}
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__phone {
+  font-family: "Alumni Sans", "Gill Sans", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+@media (max-width: 1199px) {
+  .header__phone {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
   }
-*/
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
+}
+@media (max-width: 767px) {
+  .header__phone {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
   }
-*/
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
+}
