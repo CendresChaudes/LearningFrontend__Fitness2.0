@@ -25,7 +25,7 @@ $color-crimson-opacity:             rgba(#D10A42, 0.2);
 
 $crimson-to-cobalt:                 linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 $torch-red-to-cobalt:               linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-$dark-cerulean-to-venetian-red:     conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.23633825778961deg, #b80027 313.3060026168823deg);
+$dark-cerulean-to-venetian-red:     conic-gradient(from 182deg at 33% 34%, #003D85 0deg, #B80027 313deg, #003D85 360deg);
 
 // Typography
 // ---------------------------------
@@ -54,6 +54,7 @@ $trans-600:                         0.6s $tf-default;
 // ---------------------------------
 
 $vp-768:                            768px;
+$vp-900:                            900px;
 $vp-1200:                           1200px;
 
 // Retina

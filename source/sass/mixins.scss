@@ -24,6 +24,12 @@
   }
 }
 
+@mixin active-no-focus {
+  &:active:not(.focus-visible) {
+    @content;
+  }
+}
+
 @mixin hover-focus {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
@@ -44,13 +50,14 @@
   }
 }
 
+@mixin vp-900 {
+  @media (max-width: ($vp-900 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-767 {
   @media (max-width: ($vp-768 - 1px)) {
     @content;
   }
 }
-
-// ---------------------------------
-
-// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
-// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
