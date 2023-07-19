@@ -27,7 +27,7 @@
       grid-template-columns: min-content 324px;
     }
 
-    @include vp-900 {
+    @include vp-899 {
       justify-content: end;
     }
 
@@ -36,8 +36,24 @@
       flex-direction: column;
     }
 
+    & picture {
+      align-self: auto;
+
+      @include vp-1349 {
+        align-self: flex-end;
+      }
+
+      @include vp-1199 {
+        align-self: auto;
+      }
+    }
+
     & img {
       width: 500px;
+
+      @include vp-1349 {
+        width: 420px;
+      }
 
       @include vp-1199 {
         width: 324px;

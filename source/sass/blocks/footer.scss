@@ -1,0 +1,133 @@
+.footer {
+  display: flex;
+  align-items: center;
+  min-height: 108px;
+
+  background-color: $color-black-russian;
+
+  @include vp-1199 {
+    min-height: 114px;
+  }
+  @include vp-767 {
+    min-height: auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include vp-767 {
+      display: block;
+      margin: 0 auto;
+      max-width: 350px;
+      padding: 50px 0;
+
+      column-count: 2;
+    }
+
+    @include vp-499 {
+      max-width: none;
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    @include vp-767 {
+      display: inline-block;
+      margin: 5px 0 15px 0;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    gap: 40px;
+    @include vp-1199 {
+      gap: 30px;
+    }
+    @include vp-767 {
+      display: block;
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__nav-link {
+    font-size: 14px;
+    line-height: normal;
+    color: $color-default-white;
+
+    @include vp-767 {
+      display: inline-block;
+
+      font-size: 16px;
+    }
+  }
+
+  &__nav-item {
+    @include vp-767 {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    gap: 11px;
+    @include vp-767 {
+      column-span: all;
+    }
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+
+    background-color: $color-default-white;
+    border-radius: 50%;
+
+    @include hover {
+      background-color: $color-egyptian-blue;
+
+      & svg {
+        fill: $color-default-white;
+      }
+    }
+    @include focus {
+      background-color: $color-egyptian-blue;
+      outline: none;
+
+      & svg {
+        fill: $color-default-white;
+      }
+    }
+    @include active-no-focus {
+      background-color: $color-sapphire;
+    }
+
+    &--disabled {
+      color: $color-black-russian;
+
+      background-color: rgba($color-default-white, $alpha: 0.3);
+
+      pointer-events: none;
+    }
+
+    & svg {
+      fill: $color-black-russian;
+    }
+  }
+}

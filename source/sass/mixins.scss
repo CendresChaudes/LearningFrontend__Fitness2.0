@@ -44,13 +44,19 @@
 
 // Desktop first
 
+@mixin vp-1349 {
+  @media (max-width: ($vp-1350 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-1199 {
   @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }
 
-@mixin vp-900 {
+@mixin vp-899 {
   @media (max-width: ($vp-900 - 1px)) {
     @content;
   }
@@ -58,6 +64,12 @@
 
 @mixin vp-767 {
   @media (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-499 {
+  @media (max-width: ($vp-500 - 1px)) {
     @content;
   }
 }
