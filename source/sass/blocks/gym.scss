@@ -127,7 +127,7 @@
   }
 
   .is-active {
-    iframe {
+    .gym__player {
       display: block;
     }
 
@@ -151,7 +151,7 @@
       margin: 0;
     }
 
-    iframe {
+    .gym__player {
       display: none;
       width: 364px;
       height: 228px;

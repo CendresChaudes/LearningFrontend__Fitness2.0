@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {initPlayer} from './modules/video';
+
+initPlayer();
 
 // ---------------------------------
 

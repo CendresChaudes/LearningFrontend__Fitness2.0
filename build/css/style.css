@@ -1433,7 +1433,7 @@ button,
     height: auto;
   }
 }
-.gym .is-active iframe {
+.gym .is-active .gym__player {
   display: block;
 }
 .gym .is-active .gym__video-preview {
@@ -1460,26 +1460,26 @@ button,
     margin: 0;
   }
 }
-.gym__video-wrapper iframe {
+.gym__video-wrapper .gym__player {
   display: none;
   width: 364px;
   height: 228px;
   border: none;
 }
 @media (max-width: 1199px) {
-  .gym__video-wrapper iframe {
+  .gym__video-wrapper .gym__player {
     width: 266px;
     height: 167px;
   }
 }
 @media (max-width: 767px) {
-  .gym__video-wrapper iframe {
+  .gym__video-wrapper .gym__player {
     width: 100vw;
     height: 300px;
   }
 }
 @media (max-width: 499px) {
-  .gym__video-wrapper iframe {
+  .gym__video-wrapper .gym__player {
     height: 167px;
   }
 }

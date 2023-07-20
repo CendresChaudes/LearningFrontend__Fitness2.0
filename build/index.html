@@ -106,15 +106,7 @@
                   </picture>
                   <button class="gym__video-button" aria-label="Включить видео."></button>
                 </div>
-                <iframe
-                  width="364"
-                  height="228"
-                  src="https://www.youtube.com/embed/9TZXsZItgdw"
-                  title="Обзорное видео тренажерного зала."
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                >
-                </iframe>
+                <div class="gym__player" id="player"></div>
               </div>
             </div>
           </div>
@@ -177,6 +169,7 @@
     </footer>
   </div>
 
+  <script src="https://www.youtube.com/player_api"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
