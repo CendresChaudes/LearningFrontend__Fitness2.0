@@ -1,0 +1,240 @@
+.gym {
+  padding: 120px 0;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+  @include vp-767 {
+    padding: 70px 0;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 103px;
+
+    @include vp-1199 {
+      padding: 0 45px;
+    }
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    justify-content: end;
+
+    gap: 85px;
+    grid-template-columns: 355px 660px;
+    @include vp-1199 {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+
+      gap: 50px;
+    }
+    @include vp-767 {
+      gap: 40px;
+    }
+  }
+
+  &__content-wrapper {
+    margin: 35px 0 0 0;
+
+    @include vp-1199 {
+      margin: 0;
+    }
+    @include vp-767 {
+      padding: 0 15px;
+    }
+
+    span {
+      display: block;
+      margin: 0 0 35px 0;
+
+      font-size: 18px;
+
+      @include vp-1199 {
+        text-align: center;
+      }
+      @include vp-767 {
+        margin: 0 0 25px 0;
+
+        text-align: left;
+      }
+    }
+
+    p {
+      margin: 0 0 5px 0;
+
+      font-weight: 300;
+
+      @include vp-1199 {
+        max-width: 502px;
+        margin: 0;
+
+        text-align: center;
+
+        &:not(:first-of-type) {
+          display: none;
+        }
+      }
+      @include vp-767 {
+        padding: 0 30px 0 0;
+
+        text-align: left;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+
+    @include vp-1199 {
+      margin: 0 0 1px 0;
+
+      text-align: center;
+    }
+    @include vp-767 {
+      margin: 0 0 5px 0;
+
+      text-align: left;
+    }
+  }
+
+  &__media-wrapper {
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+
+      gap: 40px;
+
+      img {
+        height: 490px;
+        width: 100vw;
+        object-fit: cover;
+      }
+    }
+
+    @include vp-499 {
+      img {
+        height: auto;
+      }
+    }
+  }
+
+  .is-active {
+    iframe {
+      display: block;
+    }
+
+    & .gym__video-preview {
+      display: none;
+    }
+  }
+
+  &__video-wrapper {
+    margin: -114px 0 0 -65px;
+    height: 228px;
+
+    @include vp-1199 {
+      display: flex;
+      justify-content: center;
+      margin: -84px 0 0 0;
+      height: auto;
+    }
+
+    @include vp-767 {
+      margin: 0;
+    }
+
+    iframe {
+      display: none;
+      width: 364px;
+      height: 228px;
+
+      border: none;
+
+      @include vp-1199 {
+        width: 266px;
+        height: 167px;
+      }
+      @include vp-767 {
+        width: 100vw;
+        height: 300px;
+      }
+      @include vp-499 {
+        height: 167px;
+      }
+    }
+  }
+
+  &__video-preview {
+    position: relative;
+
+    display: inline-block;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $dark-cerulean-opacity;
+    }
+
+    @include vp-767 {
+      img {
+        width: 100vw;
+        height: 300px;
+
+        object-fit: cover;
+      }
+    }
+
+    @include vp-499 {
+      img {
+        height: 167px;
+      }
+    }
+  }
+
+  &__video-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+
+    background-color: $color-transparent;
+    background-image: url("../../img/content/gym/play-button-default.svg");
+    border: none;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+
+    @include hover {
+      background-image: url("../../img/content/gym/play-button-state-action.svg");
+    }
+    @include focus {
+      background-image: url("../../img/content/gym/play-button-state-action.svg");
+    }
+    @include active-no-focus {
+      background-image: url("../../img/content/gym/play-button-state-action.svg");
+    }
+
+    &:disabled {
+      background-image: url("../../img/content/gym/play-button-state-action.svg");
+      opacity: 0.4;
+    }
+  }
+}
