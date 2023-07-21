@@ -18,6 +18,7 @@ $color-sapphire-opacity:            rgba(#102654, 0.5);
 $dark-cerulean-opacity:             rgba(#14367a, 0.5);
 $color-resolution-blue:             #1c3374;
 $color-egyptian-blue:               #103aae;
+$color-persian-blue:                #2e35ac;
 $color-torch-red:                   #ed0233;
 $color-torch-red-alt:               #ff121f;
 $color-crimson-opacity:             rgba(#D10A42, 0.2);
@@ -25,6 +26,7 @@ $color-crimson-opacity:             rgba(#D10A42, 0.2);
 // Gradient
 
 $crimson-to-cobalt:                 linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+$crimson-to-cobalt-alt:             linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
 $torch-red-to-cobalt:               linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 $dark-cerulean-to-venetian-red:     conic-gradient(from 182deg at 33% 34%, #003D85 0deg, #B80027 313deg, #003D85 360deg);
 
