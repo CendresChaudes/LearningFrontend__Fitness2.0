@@ -194,7 +194,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: $dark-cerulean-opacity;
+      background-color: rgba($dark-cerulean, 0.5)
     }
 
     @include vp-767 {

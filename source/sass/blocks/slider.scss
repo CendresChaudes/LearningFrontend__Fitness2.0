@@ -1,0 +1,86 @@
+.slider {
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__arrow-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    @include vp-1199 {
+      width: calc(100% - 40px);
+    }
+
+    @include vp-767 {
+      width: calc(100% - 12px);
+    }
+  }
+
+  &__arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+
+    background-color: $color-transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @include vp-767 {
+      width: 34px;
+      height: 34px;
+    }
+
+    @include hover {
+      border: 1px solid $color-sapphire;
+    }
+
+    @include focus {
+      border: 1px solid $color-sapphire;
+      outline: none;
+    }
+
+    @include active-no-focus {
+      background-color: $color-sapphire;
+
+      & svg {
+        stroke: $color-default-white;
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+
+      svg {
+        stroke: rgba($color-sapphire, $alpha: 0.3);
+      }
+    }
+
+    & svg {
+      stroke: $color-sapphire;
+
+      @include vp-767 {
+        width: 10px;
+        height: 19px;
+      }
+    }
+
+    &--next {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

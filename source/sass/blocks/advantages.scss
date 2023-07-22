@@ -67,7 +67,7 @@
     }
 
     &--bottom {
-      border-top: 2px solid $color-crimson-opacity;
+      border-top: 2px solid rgba($color-crimson, 0.2);
 
       @include vp-1199 {
         border: none;

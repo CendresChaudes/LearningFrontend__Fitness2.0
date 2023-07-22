@@ -209,6 +209,41 @@
           </div>
         </div>
       </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title title">Отзывы</h2>
+        <div class="reviews__slider slider swiper">
+          <ul class="reviews__slider-list slider__list swiper-wrapper">
+            <li class="reviews__slider-item slider__item swiper-slide">
+              <div class="reviews__user-info">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/reviews/review-1.webp 1x, img/content/reviews/review-1@2x.webp 2x" width="68" height="68">
+                  <source type="image/webp" srcset="img/content/reviews/review-1.webp 1x, img/content/reviews/review-1@2x.webp 2x" width="80" height="80">
+                  <source media="(max-width: 767px)" srcset="img/content/reviews/review-1.png 1x, img/content/reviews/review-1@2x.png 2x" width="68" height="68">
+                  <img src="img/content/reviews/review-1.png" srcset="img/content/reviews/review-1@2x.png 2x" width="80" height="80" alt="Аватар пользователя.">
+                </picture>
+                <h3 class="reviews__user-name">Анна Орлова</h3>
+              </div>
+              <p class="reviews__text">
+                &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+              </p>
+            </li>
+          </ul>
+          <div class="slider__arrow-buttons">
+            <button class="slider__arrow-button slider__arrow-button--prev" id="prev-review-button" aria-label="Предыдущий слайд.">
+              <svg aria-hidden="true" focusable="true" width="18" height="34" viewBox="0 0 18 34">
+                <use xlink:href="img/sprite.svg#arrow-icon"></use>
+              </svg>
+            </button>
+            <button class="slider__arrow-button slider__arrow-button--next" id="next-review-button" aria-label="Следующий слайд.">
+              <svg aria-hidden="true" focusable="true" width="18" height="34" viewBox="0 0 18 34">
+                <use xlink:href="img/sprite.svg#arrow-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

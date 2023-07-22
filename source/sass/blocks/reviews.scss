@@ -1,0 +1,98 @@
+.reviews {
+  padding: 120px 0;
+
+  &__slider {
+    position: relative;
+    width: 52.12%;
+    padding: 0 76px;
+
+    @include vp-1199 {
+      width: 100%;
+      padding: 0 101px;
+    }
+
+    @include vp-767 {
+      padding: 0 47px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px 0;
+
+    text-align: center;
+
+    @include vp-1199 {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__slider-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__slider-item {
+    position: relative;
+
+
+    margin: 0 auto;
+    padding: 62px 62px 62px 170px;
+
+    color: $color-default-white;
+
+    background-color: $color-resolution-blue;
+
+    @include vp-767 {
+      padding: 40px 25px;
+    }
+
+    & picture {
+      flex-shrink: 0;
+    }
+
+    & img {
+      position: absolute;
+      left: 62px;
+
+      @include vp-767 {
+        position: static;
+      }
+    }
+  }
+
+  &__user-info {
+    margin: 0 0 12px 0;
+
+    @include vp-767 {
+      display: flex;
+      align-items: center;
+      margin: 0 0 15px 0;
+      padding: 0 15px;
+
+      gap: 15px;
+    }
+  }
+
+  &__user-name {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    @include vp-767 {
+      line-height: 1.3;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    line-height: 1.4;
+
+    @include vp-767 {
+      text-align: center;
+    }
+  }
+}
