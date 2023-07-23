@@ -1,9 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initPlayer} from './modules/player/player';
+import {initCoachesSlider} from './modules/sliders/coaches-slider';
 import {initReviewsSlider} from './modules/sliders/reviews-slider';
 
 initPlayer();
+initCoachesSlider();
 initReviewsSlider();
 
 // ---------------------------------

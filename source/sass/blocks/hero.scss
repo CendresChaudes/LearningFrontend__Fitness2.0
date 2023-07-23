@@ -39,7 +39,7 @@
     & picture {
       align-self: auto;
 
-      @include vp-1349 {
+      @include vp-1365 {
         align-self: flex-end;
       }
 
@@ -51,8 +51,8 @@
     & img {
       width: 500px;
 
-      @include vp-1349 {
-        width: 420px;
+      @include vp-1365 {
+        width: 440px;
       }
 
       @include vp-1199 {

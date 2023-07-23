@@ -6,27 +6,7 @@
     list-style: none;
   }
 
-  &__arrow-buttons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-    transform: translateX(-50%) translateY(-50%);
-
-    @include vp-1199 {
-      width: calc(100% - 40px);
-    }
-
-    @include vp-767 {
-      width: calc(100% - 12px);
-    }
-  }
-
-  &__arrow-button {
+  &__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,12 +49,11 @@
     }
 
     & svg {
-      stroke: $color-sapphire;
-
       @include vp-767 {
         width: 10px;
         height: 19px;
       }
+      stroke: $color-sapphire;
     }
 
     &--next {

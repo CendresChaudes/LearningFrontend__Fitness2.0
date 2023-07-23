@@ -1,0 +1,162 @@
+.coaches {
+  padding: 105px 0;
+
+  &__title {
+    margin: 0 0 40px 0;
+
+    @include vp-1199 {
+      margin: 0 0 30px 0;
+
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slider-wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include vp-1365 {
+      width: calc(1200px - 2 * 103px);
+    }
+
+    @include vp-1199 {
+      width: 698px;
+    }
+
+    @include vp-899 {
+      width: 566px;
+    }
+
+    @include vp-767 {
+      width: 226px;
+    }
+  }
+
+  &__slider-item {
+    @include hover-focus {
+      & > .coaches__slide-content > * {
+        display: block;
+      }
+
+      & .coaches__slide-content {
+        height: 100%;
+        padding: 50px 30px 50px 30px;
+
+        background-color: rgba($color-sapphire, 0.89);
+
+        transition: background-color $trans-default;
+
+        @include vp-767 {
+          padding: 35px 14px 35px 14px;
+        }
+      }
+
+      & .coaches__name {
+        margin: 0;
+      }
+
+      & .coaches__sport-type {
+        margin: 0 0 35px 0;
+
+        @include vp-767 {
+          margin: 0 0 25px 0;
+        }
+      }
+
+      & .coaches__achievements {
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+      }
+    }
+  }
+
+  &__slide-content {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    overflow: auto;
+
+    color: $color-default-white;
+
+    scrollbar-gutter: stable both-edges;
+
+    & > *:not(.coaches__name) {
+      display: none;
+    }
+  }
+
+  &__slider-button {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    &--prev {
+      left: -76px;
+
+      @include vp-1365 {
+        left: calc((100% - (1200px - 2 * 103px)) / 2 - 7.65%);
+      }
+
+      @include vp-1199 {
+        left: calc((100% - 698px) / 2 - 11.21%);
+      }
+
+      @include vp-899 {
+        left: calc((100% - 566px) / 2 - 11.21%);
+      }
+
+      @include vp-767 {
+        left: calc((100% - 226px) / 2 - 15.17%);
+      }
+    }
+
+    &--next {
+      right: -76px;
+
+      @include vp-1365 {
+        right: calc((100% - (1200px - 2 * 103px)) / 2 - 7.65%);
+      }
+
+      @include vp-1199 {
+        right: calc((100% - 698px) / 2 - 11.21%);
+      }
+
+      @include vp-899 {
+        right: calc((100% - 566px) / 2 - 11.21%);
+      }
+
+      @include vp-767 {
+        right: calc((100% - 226px) / 2 - 15.17%);
+      }
+    }
+  }
+
+  &__name {
+    margin: 0 0 20px 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__sport-type {
+    text-align: center;
+    color: $color-spindle;
+  }
+
+  &__achievements {
+    margin: 0;
+    padding: 0 0 0 10px;
+
+    list-style-type: disc;
+    font-size: 14px;
+  }
+}
