@@ -2,7 +2,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 27px 44px;
+  padding: 10px;
 
   font-weight: 700;
   font-size: 12px;
@@ -12,6 +12,7 @@
   letter-spacing: 0.6px;
 
   background-color: $color-transparent;
+  border: 2px solid;
   cursor: pointer;
 
   transition: opacity $trans-default;
@@ -23,26 +24,20 @@
   &--white {
     color: $color-default-white;
 
-    border: 4px solid $color-default-white;
+    border-color: $color-default-white;
 
-    @include hover {
+    @include hover-focus {
       color: $color-egyptian-blue;
 
       background-color: $color-default-white;
+      outline: none;
     }
-    @include focus {
-      color: $color-egyptian-blue;
 
-      background-color: $color-default-white;
-    }
     @include active-no-focus {
       color: $color-sapphire;
     }
 
     &:disabled {
-      color: $color-default-white;
-
-      background-color: $color-transparent;
       opacity: 0.5;
     }
   }
@@ -52,34 +47,28 @@
 
     background-color: $color-transparent;
     opacity: 0.5;
+
+    pointer-events: none;
   }
 
   &--blue {
-    color: $color-default-white;
+    color: $color-sapphire;
 
-    border: 2px solid $color-resolution-blue;
+    border-color: $color-sapphire;
 
-    @include hover {
+    @include hover-focus {
       color: $color-default-white;
 
       background-image: $torch-red-to-cobalt;
-      border: none;
+      border-color: $color-default-white;
+      outline: none;
     }
-    @include focus {
-      color: $color-default-white;
 
-      background-image: $torch-red-to-cobalt;
-      border: none;
-    }
     @include active-no-focus {
       color: rgba($color-default-white, 0.7);
     }
 
     &:disabled {
-      color: $color-sapphire;
-
-      background-image: none;
-      border: 2px solid $color-resolution-blue;
       opacity: 0.3;
     }
   }
@@ -88,7 +77,9 @@
     color: $color-sapphire;
 
     background-image: none;
-    border: 2px solid $color-resolution-blue;
+    border: 4px solid $color-sapphire;
     opacity: 0.3;
+
+    pointer-events: none;
   }
 }

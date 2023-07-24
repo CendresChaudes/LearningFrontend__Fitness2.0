@@ -1,0 +1,271 @@
+.subscriptions {
+  position: relative;
+
+  padding: 100px 0 120px 0;
+
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 55px 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+
+    width: 287px;
+    height: 494px;
+
+    background: image-set(
+    url("../../img/content/subscriptions/plates-desktop.webp") type("image/webp"),
+    url("../../img/content/subscriptions/plates-desktop.png") type("image/png")
+    );
+    background-size: 287px 494px;
+
+    @include retina {
+      background-image: image-set(
+      url("../../img/content/subscriptions/plates-desktop.webp") type("image/webp"),
+      url("../../img/content/subscriptions/plates-desktop.png") type("image/png")
+      );
+    }
+
+    @include vp-1199 {
+      bottom: -120px;
+
+      width: 347px;
+      height: 444px;
+
+      background-image: image-set(
+      url("../../img/content/subscriptions/plates-tablet.webp") type("image/webp"),
+      url("../../img/content/subscriptions/plates-tablet.png") type("image/png")
+      );
+      background-size: 347px 444px;
+
+      @include retina {
+        background-image: image-set(
+        url("../../img/content/subscriptions/plates-tablet@2x.webp") type("image/webp"),
+        url("../../img/content/subscriptions/plates-tablet@2x.png") type("image/png")
+        );
+      }
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  .q {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__controls {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 39px auto;
+
+    gap: 46px;
+
+    @include vp-1199 {
+      margin: 0 auto 45px auto;
+
+      gap: 54px;
+    }
+
+    @include vp-767 {
+      margin: 0 auto 35px auto;
+
+      gap: 45px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: rgba($color-grey, 0.2);
+    }
+  }
+
+  &__control {
+    position: relative;
+
+    padding: 18px 0;
+
+    font-size: 20px;
+    color: rgba($color-sapphire, 0.5);
+
+    background-color: $color-transparent;
+    border: none;
+    cursor: pointer;
+
+    @include vp-1199 {
+      font-size: 18px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+    }
+
+    &.is-active {
+      color: $color-sapphire;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: $color-crimson;
+      }
+    }
+  }
+
+  &__element {
+    width: 100%;
+  }
+
+  &__list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include vp-1199 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 77px;
+
+    background-color: $color-default-white;
+
+    @include vp-1199 {
+      width: 65.20%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 68px 118px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      max-width: 400px;
+      padding: 42px 55px;
+    }
+
+    @include hover-focus {
+      border-image-source: $crimson-to-cobalt;
+      border-image-slice: 1;
+      border-image-width: 7px;
+    }
+  }
+
+  &__item-name {
+    margin: 0 0 22px 0;
+
+    font-weight: 700;
+    font-size: 26px;
+
+    @include vp-767 {
+      font-size: 22px;
+    }
+  }
+
+  &__item-time {
+    margin: 0 0 96px 0;
+  }
+
+  &__item-price-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 58px 0;
+
+    gap: 14px;
+    
+    @include vp-767 {
+      margin: 0 0 50px 0;
+
+      gap: 10px;
+    }
+
+    & svg {
+      position: relative;
+      z-index: 1;
+
+      width: 30px;
+      height: 42px;
+
+      @include vp-767 {
+        width: 24px;
+        height: 33px;
+      }
+    }
+  }
+
+  &__item-price-shadow {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+
+    font-weight: 700;
+    font-size: 100px;
+    color: $color-whisper;
+
+    transform: translateX(-50%);
+    opacity: 0.48;
+
+    @include vp-767 {
+      font-size: 80px;
+    }
+  }
+
+  &__item-price-value {
+    position: relative;
+    z-index: 1;
+
+    font-weight: 700;
+    font-size: 60px;
+    color: $color-egyptian-blue;
+
+    @include vp-767 {
+      font-size: 48px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    min-height: 66px;
+    margin: auto 0 0 0;
+
+    border-width: 2px;
+  }
+}

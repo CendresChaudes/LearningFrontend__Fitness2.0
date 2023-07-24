@@ -28,9 +28,9 @@
 
     img {
       width: 100%;
+      height: auto;
       min-height: 100%;
       object-fit: cover;
-      height: auto;
 
       @include vp-767 {
         min-height: auto;
@@ -167,12 +167,13 @@
 
   &__link {
     width: 100%;
+    min-height: 71px;
     margin: auto 0 0 0;
-    padding: 25px;
 
     border: 4px solid $color-default-white;
 
     @include vp-1199 {
+      min-height: 41px;
       padding: 14px;
 
       font-size: 10px;

@@ -3,10 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initPlayer} from './modules/player/player';
 import {initCoachesSlider} from './modules/sliders/coaches-slider';
 import {initReviewsSlider} from './modules/sliders/reviews-slider';
-
-initPlayer();
-initCoachesSlider();
-initReviewsSlider();
+import {initTabs} from './modules/tabs/init-tabs';
 
 // ---------------------------------
 
@@ -25,6 +22,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    initTabs();
+    initPlayer();
+    initCoachesSlider();
+    initReviewsSlider();
   });
 });
 
