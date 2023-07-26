@@ -1,0 +1,98 @@
+.input {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 10px 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    font-family: $ff-roboto-condensed;
+    color: $color-default-white;
+
+    background-color: $color-transparent;
+    border: 1px solid $color-transparent;
+    border-bottom: 1px solid $color-light-slate-grey;
+
+    @include hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    @include focus {
+      border: 1px solid $color-default-white;
+      outline: none;
+
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+
+    &:disabled {
+      color: rgba($color-default-white, 0.4);
+
+      border-bottom: 1px solid rgba($color-default-white, 0.3);
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: normal;
+      font-family: $ff-roboto-condensed;
+      color: $color-default-white;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+
+    color: $color-torch-red-alt;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    @media screen and (max-width: 767px) {
+      bottom: 20px;
+    }
+  }
+
+  &.is-invalid {
+    input {
+      border: 1px solid $color-transparent;
+      border-bottom: 1px solid $color-torch-red-alt;
+
+      @include hover-focus {
+        border: 1px solid rgba($color-torch-red-alt, 0.5);
+      }
+    }
+  }
+
+  &.is-valid {
+    input {
+      border: 1px solid $color-transparent;
+      border-bottom: 1px solid $color-eucalyptus;
+
+      @include hover-focus {
+        border: 1px solid rgba($color-eucalyptus, 0.5);
+      }
+    }
+  }
+
+  .input-message {
+    position: absolute;
+    font-size: 14px;
+    left: 0;
+    bottom: -20px;
+
+    &.is-invalid {
+      color: $color-torch-red-alt;
+    }
+
+    &.is-valid {
+      color: $color-eucalyptus;
+    }
+  }
+}

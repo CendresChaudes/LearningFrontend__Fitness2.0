@@ -539,16 +539,28 @@
       <div class="main__free-lesson_contacts-wrapper">
         <section class="free-lesson">
           <div class="free-lesson__container">
-            <div class="free-lesson__wrapper">
+            <div class="free-lesson__wrapper" data-form-validate="data-form-validate" data-callback="base">
               <h2 class="free-lesson__title title title--white">Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru" method="get">
                 <div class="free-lesson__inputs-wrapper">
-                  <div class="free-lesson__input-wrapper">
+                  <div
+                    class="free-lesson__input-wrapper input"
+                    data-validate-type="text"
+                    data-limitation="name"
+                    data-message-base="Обязательное поле"
+                    data-message-extra="Неверный ввод"
+                    data-required
+                    >
                     <label aria-label="Введите имя.">
                       <input type="text" name="name" placeholder="Имя" required>
                     </label>
                   </div>
-                  <div class="free-lesson__input-wrapper">
+                  <div class="free-lesson__input-wrapper input"
+                    data-validate-type="phone"
+                    data-message-base="Обязательное поле"
+                    data-message-extra="Неверный ввод"
+                    data-required
+                    >
                     <label aria-label="Введите телефон.">
                       <input type="tel" name="phone" placeholder="Телефон" required>
                     </label>

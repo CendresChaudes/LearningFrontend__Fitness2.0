@@ -1536,141 +1536,133 @@ button,
   pointer-events: none;
 }
 
-.custom-input,
-.custom-textarea {
+.input {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
 }
-@media screen and (max-width: 767px) {
-  .custom-input,
-.custom-textarea {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
-}
-.custom-input label,
-.custom-textarea label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.input input {
   width: 100%;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid #74819C;
 }
-@media screen and (max-width: 767px) {
-  .custom-input label,
-.custom-textarea label {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media (hover: hover) {
+  .input input:hover:not(.focus-visible) {
+    border-bottom: 1px solid #ffffff;
   }
 }
-.custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  max-width: 300px;
-  min-height: 48px;
-  margin-left: auto;
-  padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+.input input.focus-visible:focus {
+  border: 1px solid #ffffff;
   outline: none;
-  -webkit-transition: border 0.3s ease;
-  transition: border 0.3s ease;
 }
-@media screen and (max-width: 767px) {
-  .custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
-    max-width: unset;
-    width: 100%;
-  }
+.input input.focus-visible:focus::-webkit-input-placeholder {
+  opacity: 0;
 }
-.custom-input label input:hover,
-.custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
+.input input.focus-visible:focus::-moz-placeholder {
+  opacity: 0;
 }
-.custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
+.input input.focus-visible:focus:-ms-input-placeholder {
+  opacity: 0;
 }
-@media screen and (max-width: 767px) {
-  .custom-input__label,
-.custom-textarea__label {
-    margin: 0 0 18px 0;
-  }
+.input input.focus-visible:focus::-ms-input-placeholder {
+  opacity: 0;
 }
-.custom-input__error,
-.custom-textarea__error {
+.input input.focus-visible:focus::placeholder {
+  opacity: 0;
+}
+.input input:disabled {
+  color: rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.input input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  color: #ffffff;
+}
+.input input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  color: #ffffff;
+}
+.input input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  color: #ffffff;
+}
+.input input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  color: #ffffff;
+}
+.input input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  color: #ffffff;
+}
+.input__error {
   position: absolute;
   right: 0;
   bottom: 35px;
-  color: #ff1553;
+  color: #ff121f;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 @media screen and (max-width: 767px) {
-  .custom-input__error,
-.custom-textarea__error {
+  .input__error {
     bottom: 20px;
   }
 }
-.custom-input.is-invalid input,
-.custom-input.is-invalid textarea,
-.custom-textarea.is-invalid input,
-.custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
+.input.is-invalid input {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid #ff121f;
 }
-.custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
-.custom-input.is-invalid textarea:focus,
-.custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
-.custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
-.custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
+@media (hover: hover) {
+  .input.is-invalid input:hover:not(.focus-visible) {
+    border: 1px solid rgba(255, 18, 31, 0.5);
+  }
 }
-.custom-input.is-valid input,
-.custom-textarea.is-valid input {
-  border: 2px solid #22b259;
+.input.is-invalid input.focus-visible:focus {
+  border: 1px solid rgba(255, 18, 31, 0.5);
 }
-.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
-.custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
+.input.is-valid input {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid #22b259;
 }
-.custom-input .input-message,
-.custom-textarea .input-message {
+@media (hover: hover) {
+  .input.is-valid input:hover:not(.focus-visible) {
+    border: 1px solid rgba(34, 178, 89, 0.5);
+  }
+}
+.input.is-valid input.focus-visible:focus {
+  border: 1px solid rgba(34, 178, 89, 0.5);
+}
+.input .input-message {
   position: absolute;
-  right: 0;
-  bottom: -5px;
+  font-size: 14px;
+  left: 0;
+  bottom: -20px;
 }
-.custom-input .input-message.is-invalid,
-.custom-textarea .input-message.is-invalid {
-  color: #ff0000;
+.input .input-message.is-invalid {
+  color: #ff121f;
 }
-.custom-input .input-message.is-valid,
-.custom-textarea .input-message.is-valid {
-  color: #15ab07;
+.input .input-message.is-valid {
+  color: #22b259;
 }
 
 @media (hover: hover) {
@@ -3905,83 +3897,6 @@ button,
     margin: 0 0 40px 0;
     gap: 40px;
   }
-}
-.free-lesson__input-wrapper input {
-  width: 100%;
-  padding: 10px 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0);
-  border-bottom: 1px solid #74819C;
-}
-@media (hover: hover) {
-  .free-lesson__input-wrapper input:hover:not(.focus-visible) {
-    border-bottom: 1px solid #ffffff;
-  }
-}
-.free-lesson__input-wrapper input.focus-visible:focus {
-  padding: 10px;
-  border: 1px solid #ffffff;
-  outline: none;
-}
-.free-lesson__input-wrapper input.focus-visible:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
-.free-lesson__input-wrapper input.focus-visible:focus::-moz-placeholder {
-  opacity: 0;
-}
-.free-lesson__input-wrapper input.focus-visible:focus:-ms-input-placeholder {
-  opacity: 0;
-}
-.free-lesson__input-wrapper input.focus-visible:focus::-ms-input-placeholder {
-  opacity: 0;
-}
-.free-lesson__input-wrapper input.focus-visible:focus::placeholder {
-  opacity: 0;
-}
-.free-lesson__input-wrapper input:disabled {
-  color: rgba(255, 255, 255, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-.free-lesson__input-wrapper input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
-  color: #ffffff;
-}
-.free-lesson__input-wrapper input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
-  color: #ffffff;
-}
-.free-lesson__input-wrapper input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
-  color: #ffffff;
-}
-.free-lesson__input-wrapper input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
-  color: #ffffff;
-}
-.free-lesson__input-wrapper input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
-  color: #ffffff;
 }
 .free-lesson__submit {
   width: 100%;
