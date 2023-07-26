@@ -22,6 +22,7 @@
     grid-template-columns: min-content 500px;
 
     @include vp-1199 {
+      margin: 0;
       justify-content: center;
 
       gap: 30px;
@@ -89,9 +90,9 @@
       letter-spacing: 1.44px;
 
       @include vp-1199 {
-        margin: 55px 5px 15px 0;
+        margin: 53px 3px 6px 0;
 
-        font-size: 34px;
+        font-size: 32px;
         letter-spacing: 1.02px;
       }
 
@@ -115,7 +116,7 @@
       -webkit-text-stroke-width: 3px;
 
       @include vp-1199 {
-        margin: 0 0 30px 0;
+        margin: 0 0 37px 0;
 
         font-size: 72px;
         text-transform: none;
@@ -142,7 +143,8 @@
       gap: 5px;
 
       @include vp-1199 {
-        bottom: 130px;
+        bottom: 142px;
+        left: -136px;
       }
 
       @include vp-767 {

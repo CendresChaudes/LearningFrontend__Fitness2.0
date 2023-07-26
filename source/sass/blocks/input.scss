@@ -15,6 +15,10 @@
     border: 1px solid $color-transparent;
     border-bottom: 1px solid $color-light-slate-grey;
 
+    @include vp-1199 {
+      padding: 8px 0;
+    }
+
     @include hover {
       border-bottom: 1px solid $color-default-white;
     }

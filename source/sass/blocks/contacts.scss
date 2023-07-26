@@ -4,7 +4,7 @@
   padding: 60px 0 67px 0;
 
   @include vp-1199 {
-    padding: 70px 0;
+    padding: 70px 0 64px 0;
   }
 
   &__container {
@@ -45,6 +45,12 @@
     }
   }
 
+  &__content-wrapper {
+    @include vp-1199 {
+      display: flex;
+    }
+  }
+
   &__content {
     position: relative;
     display: grid;
@@ -59,7 +65,8 @@
     @include vp-1199 {
       grid-template-columns: 218px 218px;
       column-gap: 96px;
-      row-gap: 35px;
+      row-gap: 30px;
+      justify-content: start;
     }
 
     @include vp-767 {
@@ -89,6 +96,10 @@
     flex-direction: column;
 
     gap: 12px;
+
+    @include vp-1199 {
+      gap: 17px;
+    }
 
     @include vp-767 {
       &--address {

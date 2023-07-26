@@ -62,6 +62,10 @@
 
   &__title {
     text-align: center;
+
+    @include vp-1199 {
+      margin: 0 0 5px 0;
+    }
   }
 
   &__controls-wrapper {
@@ -198,7 +202,7 @@
       width: 65.20%;
       max-width: 500px;
       margin: 0 auto;
-      padding: 68px 118px;
+      padding: 64px 118px 68px 118px;
     }
 
     @include vp-767 {
