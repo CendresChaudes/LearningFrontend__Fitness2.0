@@ -20,7 +20,7 @@
 
     @include vp-767 {
       display: block;
-      padding: 50px 0;
+      padding: 42px 0 50px 0;
 
       column-count: 2;
     }
@@ -57,7 +57,7 @@
 
     @include vp-767 {
       display: block;
-      margin: 0 0 40px 0;
+      margin: 0 0 50px 0;
       padding: 0;
     }
   }
@@ -73,6 +73,7 @@
       display: inline-block;
 
       font-size: 16px;
+      padding: 5px;
     }
 
     @include hover {
@@ -100,7 +101,7 @@
 
   &__nav-item {
     @include vp-767 {
-      margin-bottom: 16px;
+      margin: 0 0 12px 0;
     }
   }
 

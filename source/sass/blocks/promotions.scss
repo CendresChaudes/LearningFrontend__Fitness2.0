@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 60px 0 70px 0;
+    padding: 64px 0 70px 0;
   }
 
   &__title {
@@ -16,6 +16,10 @@
 
     @include vp-1199 {
       margin: 0 0 39px 0;
+    }
+
+    @include vp-767 {
+      margin: 0 0 41px 0;
     }
   }
 
@@ -92,6 +96,10 @@
 
     font-weight: 700;
     font-size: 70px;
+
+    @include vp-767 {
+      margin: 0 0 13px 0;
+    }
   }
 
   &__product-link {
@@ -144,7 +152,7 @@
     }
 
     @include vp-767 {
-      padding: 39px;
+      padding: 42px;
 
       text-align: center;
     }

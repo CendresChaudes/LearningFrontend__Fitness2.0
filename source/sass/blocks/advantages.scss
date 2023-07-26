@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 64px 0;
   }
 
   &__container {
@@ -56,7 +56,7 @@
       display: flex;
       flex-direction: column;
 
-      gap: 40px;
+      gap: 38px;
     }
   }
 
@@ -68,7 +68,7 @@
     @include vp-767 {
       flex-direction: column;
 
-      gap: 10px;
+      gap: 16px;
     }
 
     &--bottom {
@@ -96,6 +96,7 @@
 
     @include vp-767 {
       text-align: center;
+      gap: 9px;
     }
   }
 
@@ -167,6 +168,7 @@
 
     @include vp-767 {
       min-width: auto;
+      padding: 46px 45px;
     }
   }
 
@@ -190,6 +192,10 @@
     @include vp-767 {
       margin: 0 0 10px 0;
     }
+
+    @include vp-767 {
+      margin: 0 0 12px 0;
+    }
   }
 
   &__accent-value {
@@ -205,7 +211,7 @@
     }
 
     @include vp-767 {
-      margin: 0;
+      margin: 0 0 12px 0;
     }
   }
 
