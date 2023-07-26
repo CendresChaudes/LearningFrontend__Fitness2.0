@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  padding: 56px 0 70px 0;
+  padding: 60px 0 67px 0;
 
   @include vp-1199 {
     padding: 70px 0;
@@ -38,7 +38,7 @@
 
   &__title {
     line-height: 1;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 
     @include vp-1199 {
       margin: 0 0 35px 0;
@@ -52,8 +52,8 @@
 
     grid-template-columns: 190px 190px;
     grid-template-rows: auto auto;
-    column-gap: 120px;
-    row-gap: 30px;
+    column-gap: 104px;
+    row-gap: 25px;
     justify-content: space-between;
 
     @include vp-1199 {

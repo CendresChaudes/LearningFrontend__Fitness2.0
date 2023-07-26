@@ -1,7 +1,7 @@
 .subscriptions {
   position: relative;
 
-  padding: 100px 0 120px 0;
+  padding: 120px 0;
 
   background-color: $color-ghost-white;
 
@@ -190,7 +190,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 68px 77px;
+    padding: 66px 77px;
 
     background-color: $color-default-white;
 
@@ -215,7 +215,7 @@
   }
 
   &__item-name {
-    margin: 0 0 22px 0;
+    margin: 0 0 15px 0;
 
     font-weight: 700;
     font-size: 26px;
@@ -226,7 +226,7 @@
   }
 
   &__item-time {
-    margin: 0 0 96px 0;
+    margin: 0 0 85px 0;
   }
 
   &__item-price-wrapper {
@@ -234,7 +234,7 @@
 
     display: flex;
     align-items: baseline;
-    margin: 0 0 58px 0;
+    margin: 0 0 48px 0;
 
     gap: 14px;
 
