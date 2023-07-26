@@ -117,7 +117,7 @@
         <div class="container">
           <h2 class="subscriptions__title title">Абонементы</h2>
           <div class="subscriptions__tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
-            <div class="q">
+            <div class="subscriptions__controls-wrapper">
               <div class="subscriptions__controls" data-tabs="controls">
                 <button class="subscriptions__control is-active" type="button" data-tabs="control">1 месяц</button>
                 <button class="subscriptions__control" type="button" data-tabs="control">6 месяцев</button>
@@ -495,6 +495,296 @@
                 <a class="promotions__feature-link link link--on-light" href="#">Подробнее</a>
               </div>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq__title title">Вопросы и ответы</h2>
+          <div class="faq__tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
+            <div class="faq__controls" data-tabs="controls">
+              <button class="faq__control is-active" type="button" data-tabs="control">Центр</button>
+              <button class="faq__control" type="button" data-tabs="control">Абонемент</button>
+              <button class="faq__control" type="button" data-tabs="control">Услуги</button>
+              <button class="faq__control" type="button" data-tabs="control">Правила</button>
+            </div>
+            <div class="faq__content" data-tabs="content">
+              <div class="faq__element is-active" data-tabs="element">
+                <ul class="faq__list" data-accordion="parent">
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Как стать членом фитнес-центра?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>
+                        При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
+                        При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Где можно посмотреть расписание?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                      >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <a href="#">Вот тут.</a>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Есть кулеры в центре? Предоставляются полотенца?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                      >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Да.</p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                      >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Четыре тренера. Минимальная квалификация - мастер спорта.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__element" data-tabs="element">
+                <ul class="faq__list" data-accordion="parent">
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Занятия с тренером входят в абонемент?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                      >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>
+                        При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно.
+                        В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                        получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Можно ли заморозить абонемент?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                      >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Да.</p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                      >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Нет.</p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Что такое семейный доступ и доступ для друзей?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                      >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>
+                        Вы&nbsp;можете предоставить доступ кому-то из&nbsp;своих родственников или друзей,
+                        но&nbsp;заниматься в&nbsp;одно время может только один человек: либо&nbsp;Вы, либо тот, кому предоставили доступ.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__element" data-tabs="element">
+                <ul class="faq__list" data-accordion="parent">
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>
+                        Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу.
+                        Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Да.</p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Можно ли приобрести в центре спортивное питание?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Да.</p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Есть ли в центре детская комната?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Нет.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="faq__element" data-tabs="element">
+                <ul class="faq__list" data-accordion="parent">
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Есть в фитнес-центре дресс-код?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>
+                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду.
+                        Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки).
+                        В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п.,
+                        исключения составляют специальные классы (например, йога, пилатес).
+                      </p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Можно ли приводить с собой детей на тренировки?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Спортивные услуги предоставляются только лицам, достигшим 16-летнего возраста.</p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Какие дополнительные правила посещения центра?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Убирать за собой спортивный инвентарь на место.</p>
+                    </div>
+                  </li>
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__preview">
+                      <h3 class="faq__preview-title">Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                      <button
+                        class="faq__preview-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Показать/скрыть элемент аккордеона."
+                        >
+                      </button>
+                    </div>
+                    <div class="faq__description" data-accordion="content">
+                      <p>Нет.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,249 @@
+.faq {
+  padding: 120px 0;
+
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+  @include vp-767 {
+    padding: 70px 0;
+  }
+
+  &__title {
+    margin: 0 0 37px 0;
+
+    line-height: normal;
+
+    @include vp-1199 {
+      margin: 0 0 40px 0;
+
+      text-align: center;
+    }
+    @include vp-767 {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__tabs {
+    display: grid;
+
+    gap: 40px;
+    grid-template-columns: 260px 860px;
+    @include vp-1199 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    @include vp-1199 {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include vp-767 {
+      gap: 8px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__control {
+    min-height: 54px;
+    padding: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-sapphire;
+
+    background-color: $color-transparent;
+    border: 1px solid rgba($color-sapphire, 0.2);
+    cursor: pointer;
+
+    @include hover-focus {
+      border-color: $color-sapphire;
+      outline: none;
+    }
+
+    &.is-active {
+      color: $color-default-white;
+
+      background-image: $torch-red-to-cobalt;
+      border: none;
+    }
+
+    &:disabled {
+      color: rgba($color-sapphire, 0.3);
+
+      pointer-events: none;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    padding: 32px 0 17px;
+
+    border-top: 1px solid rgba($color-resolution-blue, 0.2);
+
+    @include vp-767 {
+      padding: 20px 0 8px 0;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid rgba($color-resolution-blue, 0.2);
+    }
+
+    &.is-active {
+      padding: 32px 0 20px 0;
+
+      @include vp-767 {
+        padding: 20px 0 8px 0;
+      }
+    }
+  }
+
+  &__preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 0 0 14px 0;
+
+    @include vp-767 {
+      margin: 0 0 12px 0;
+    }
+  }
+
+  &__preview-title {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 24px;
+
+    @include vp-767 {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+
+  &__item.is-active .faq__preview-button {
+    background-color: $color-sapphire;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__preview-button {
+    position: relative;
+
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+
+    background-color: $color-transparent;
+    border: 1px solid $color-sapphire;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @include vp-767 {
+      width: 32px;
+      height: 32px;
+    }
+
+    @include hover-focus {
+      background-color: $color-sapphire;
+
+      &::before,
+      &::after {
+        background-color: $color-default-white;
+      }
+
+      svg {
+        stroke: $color-default-white;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.3;
+
+      pointer-events: none;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 18px;
+      height: 1px;
+
+      background-color: $color-sapphire;
+      transform: translateX(-50%) translateY(-50%);
+
+      @include vp-767 {
+        width: 12px;
+      }
+    }
+
+    &::after {
+      transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    }
+  }
+
+  &__description {
+    padding: 0 200px 0 0;
+
+    @include vp-1199 {
+      padding: 0 160px 0 0;
+    }
+
+    @include vp-767 {
+      padding: 0 50px 0 0;
+    }
+
+    p,
+    a {
+      margin: 0;
+
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.4;
+      color: $color-sapphire;
+
+      @include vp-767 {
+        font-size: 16px;
+      }
+    }
+
+    a {
+      @include hover-focus {
+        opacity: 0.8;
+      }
+      @include active-no-focus {
+        opacity: 0.5;
+      }
+    }
+  }
+}

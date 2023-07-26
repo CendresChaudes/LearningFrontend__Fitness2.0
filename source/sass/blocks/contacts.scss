@@ -90,6 +90,24 @@
 
     gap: 12px;
 
+    @include vp-767 {
+      &--address {
+        order: 1;
+      }
+
+      &--worktime {
+        order: 2;
+      }
+
+      &--phone {
+        order: 3;
+      }
+
+      &--email {
+        order: 4;
+      }
+    }
+
     span {
       font-weight: 700;
 
