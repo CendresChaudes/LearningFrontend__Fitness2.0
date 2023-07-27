@@ -1,14 +1,14 @@
 .faq {
-  padding: 120px 0;
+  padding: 120px 0 129px 0;
 
   background-color: $color-ghost-white;
 
   @include vp-1199 {
-    padding: 100px 0;
+    padding: 100px 0 75px 0;
   }
 
   @include vp-767 {
-    padding: 70px 0 45px 0;
+    padding: 70px 0 0 0;
   }
 
   &__title {
@@ -33,12 +33,16 @@
     gap: 40px;
     grid-template-columns: 260px 860px;
 
+    @include vp-1365 {
+      grid-template-columns: 22.41% 73.14%;
+    }
+
     @include vp-1199 {
       display: flex;
       flex-direction: column;
     }
 
-    @include vp-1199 {
+    @include vp-767 {
       gap: 30px;
     }
   }
@@ -62,6 +66,7 @@
   }
 
   &__control {
+    user-select: none;
     min-height: 54px;
     padding: 10px;
 
@@ -105,7 +110,7 @@
   }
 
   &__item {
-    padding: 31px 0 16px;
+    padding: 28px 0 16px;
 
     border-top: 1px solid rgba($color-resolution-blue, 0.2);
 

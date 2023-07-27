@@ -39,18 +39,11 @@
     }
 
     & picture {
-      align-self: auto;
-
-      @include vp-1365 {
-        align-self: flex-end;
-      }
-
-      @include vp-1199 {
-        align-self: auto;
-      }
+      align-self: flex-end;
     }
 
     & img {
+      align-self:flex-end;
       width: 500px;
 
       @include vp-1365 {

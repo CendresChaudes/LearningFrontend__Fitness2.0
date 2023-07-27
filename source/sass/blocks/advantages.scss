@@ -50,6 +50,7 @@
       row-gap: 40px;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: min-content min-content min-content;
+      max-width: 678px;
     }
 
     @include vp-767 {
@@ -57,6 +58,7 @@
       flex-direction: column;
 
       gap: 38px;
+      max-width: none;
     }
   }
 
@@ -71,11 +73,33 @@
       gap: 16px;
     }
 
+    &--top {
+      .advantages__item-description {
+        padding: 0 0 10px 0;
+
+        @include vp-1199 {
+          padding: 0;
+        }
+
+        @include vp-767 {
+          padding: 0 40px;
+        }
+      }
+    }
+
     &--bottom {
       border-top: 2px solid rgba($color-crimson, 0.2);
 
       @include vp-1199 {
         border: none;
+      }
+
+      .advantages__item-name {
+        padding: 10px 0 0 0;
+
+        @include vp-1199 {
+          padding: 0;
+        }
       }
 
       .advantages__item-value-wrapper {
@@ -147,6 +171,11 @@
   &__item-description {
     font-weight: 300;
     line-height: 1.4;
+    margin: 0;
+
+    @include vp-767 {
+      padding: 0 40px;
+    }
   }
 
   &__accent {
@@ -228,5 +257,6 @@
 
   &__accent-description {
     line-height: 1.5;
+    margin: 0;
   }
 }

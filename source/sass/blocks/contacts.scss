@@ -17,7 +17,7 @@
     flex-direction: column;
     min-width: 683px;
     margin: 0 auto 0 0;
-    padding: 0 100px 0 120px;
+    padding: 0 79px 0 120px;
 
     @include vp-1365 {
       min-width: auto;
@@ -42,7 +42,7 @@
 
   &__title {
     line-height: 1;
-    margin: 0 0 30px 0;
+    margin: 0 0 45px 0;
 
     @include vp-1199 {
       margin: 0 0 35px 0;
@@ -55,7 +55,12 @@
 
   &__content-wrapper {
     @include vp-1199 {
+      margin: 0 auto;
+    }
+
+    @include vp-899 {
       display: flex;
+      margin: 0;
     }
   }
 
@@ -66,15 +71,19 @@
 
     grid-template-columns: 190px 190px;
     grid-template-rows: auto auto;
-    column-gap: 104px;
     row-gap: 25px;
     justify-content: space-between;
+
+    @include vp-1365 {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 12.7%;
+      justify-content: start;
+    }
 
     @include vp-1199 {
       grid-template-columns: 218px 218px;
       column-gap: 96px;
       row-gap: 30px;
-      justify-content: start;
     }
 
     @include vp-767 {
@@ -92,6 +101,14 @@
       left: 50%;
       transform: translateX(-50%);
       background-color: $color-light-slate-grey;
+
+      @include vp-1365 {
+        left: 48.5%;
+      }
+
+      @include vp-1199 {
+        left: 50%;
+      }
 
       @include vp-767 {
         display: none;
@@ -151,6 +168,14 @@
 
       @include vp-1199 {
         font-size: 18px;
+      }
+
+      @include hover-focus {
+        opacity: 0.8;
+      }
+
+      @include active-no-focus {
+        opacity: 0.5;
       }
     }
   }

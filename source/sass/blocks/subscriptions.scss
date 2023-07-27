@@ -74,6 +74,7 @@
   }
 
   &__controls {
+    user-select: none;
     position: relative;
 
     display: flex;
