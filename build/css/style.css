@@ -3777,12 +3777,12 @@ button,
 }
 @media (max-width: 1199px) {
   .faq {
-    padding: 100px 0 75px 0;
+    padding: 100px 0 100px 0;
   }
 }
 @media (max-width: 767px) {
   .faq {
-    padding: 70px 0 0 0;
+    padding: 70px 0 67px 0;
   }
 }
 .faq__title {
