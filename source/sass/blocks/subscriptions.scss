@@ -23,15 +23,15 @@
     height: 494px;
 
     background: image-set(
-    url("../../img/content/subscriptions/plates-desktop.webp") type("image/webp"),
-    url("../../img/content/subscriptions/plates-desktop.png") type("image/png")
+    url("../img/content/subscriptions/plates-desktop.webp") type("image/webp"),
+    url("../img/content/subscriptions/plates-desktop.png") type("image/png")
     );
     background-size: 287px 494px;
 
     @include retina {
       background-image: image-set(
-        url("../../img/content/subscriptions/plates-desktop.webp") type("image/webp"),
-        url("../../img/content/subscriptions/plates-desktop.png") type("image/png")
+        url("../img/content/subscriptions/plates-desktop.webp") type("image/webp"),
+        url("../img/content/subscriptions/plates-desktop.png") type("image/png")
       );
     }
 
@@ -42,15 +42,15 @@
       height: 444px;
 
       background-image: image-set(
-        url("../../img/content/subscriptions/plates-tablet.webp") type("image/webp"),
-        url("../../img/content/subscriptions/plates-tablet.png") type("image/png")
+        url("../img/content/subscriptions/plates-tablet.webp") type("image/webp"),
+        url("../img/content/subscriptions/plates-tablet.png") type("image/png")
       );
       background-size: 347px 444px;
 
       @include retina {
         background-image: image-set(
-          url("../../img/content/subscriptions/plates-tablet@2x.webp") type("image/webp"),
-          url("../../img/content/subscriptions/plates-tablet@2x.png") type("image/png")
+          url("../img/content/subscriptions/plates-tablet@2x.webp") type("image/webp"),
+          url("../img/content/subscriptions/plates-tablet@2x.png") type("image/png")
         );
       }
     }
