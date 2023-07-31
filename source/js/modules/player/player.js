@@ -1,19 +1,21 @@
-const videoContainer = document.querySelector('.video');
-const videoPlay = document.querySelector('.video [data-video=play]');
+const initPlayer = (videoContainer) => {
+  const videoPlay = videoContainer.querySelector('.video [data-play-button]');
+  const {videoId} = videoPlay.dataset;
 
-export const initPlayer = () => {
-  if (videoContainer) {
-    window.YT.ready(function () {
-      const player = new window.YT.Player('player', {
-        videoId: '9TZXsZItgdw',
-      });
-
-      const onPlayButtonClick = () => {
-        videoContainer.classList.add('is-active');
-        player.playVideo();
-      };
-
-      videoPlay.addEventListener('click', onPlayButtonClick);
+  window.YT.ready(function () {
+    const player = new window.YT.Player('player', {
+      videoId,
     });
-  }
+
+    const onPlayButtonClick = () => {
+      videoContainer.classList.add('is-active');
+      player.playVideo();
+    };
+
+    videoPlay.addEventListener('click', onPlayButtonClick);
+  });
+};
+
+export const initPlayers = () => {
+  document.querySelectorAll('.video').forEach(initPlayer);
 };

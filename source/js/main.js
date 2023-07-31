@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {initPlayer} from './modules/player/player';
+import {initPlayers} from './modules/player/player';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initCoachesSlider} from './modules/sliders/coaches-slider';
 import {initReviewsSlider} from './modules/sliders/reviews-slider';
@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
 
-    initPlayer();
+    initPlayers();
     initTabs();
     initCoachesSlider();
     initReviewsSlider();
