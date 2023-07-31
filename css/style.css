@@ -3420,6 +3420,13 @@ button,
   }
 */
 
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .subscriptions::after {
+    background-image: -webkit-image-set(url("../img/content/subscriptions/plates-desktop.webp") type("image/webp"), url("../img/content/subscriptions/plates-desktop.png") type("image/png"));
+    background-image: image-set(url("../img/content/subscriptions/plates-desktop.webp") type("image/webp"), url("../img/content/subscriptions/plates-desktop.png") type("image/png"));
+  }
+}
+
 @media (max-width: 1365px) {
   .hero__wrapper img {
     width: 440px;
@@ -4743,12 +4750,5 @@ button,
 
   .contacts__item a:hover:not(.focus-visible) {
     opacity: 0.8;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .subscriptions::after {
-    background-image: -webkit-image-set(url("../img/content/subscriptions/plates-desktop.webp") type("image/webp"), url("../img/content/subscriptions/plates-desktop.png") type("image/png"));
-    background-image: image-set(url("../img/content/subscriptions/plates-desktop.webp") type("image/webp"), url("../img/content/subscriptions/plates-desktop.png") type("image/png"));
   }
 }
