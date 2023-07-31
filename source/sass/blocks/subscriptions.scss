@@ -200,7 +200,7 @@
     background-color: $color-default-white;
 
     @include vp-1199 {
-      width: 65.20%;
+      width: 65.2%;
       max-width: 500px;
       margin: 0 auto;
       padding: 64px 118px 68px 118px;
@@ -288,7 +288,6 @@
   &__item-price-value {
     position: relative;
     z-index: 1;
-
     font-weight: 700;
     font-size: 60px;
     color: $color-egyptian-blue;

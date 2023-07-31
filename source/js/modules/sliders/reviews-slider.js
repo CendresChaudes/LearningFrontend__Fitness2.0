@@ -1,24 +1,24 @@
 import Swiper from '../../vendor/swiper';
 
-const sliderList = document.querySelector('.reviews .slider__list');
-const sliderItems = document.querySelectorAll('.reviews .slider__item');
-
-const duplicateSlides = () => sliderList.append(...Array.from(sliderItems).map((item) => item.cloneNode(true)));
+const sectionClassName = 'reviews';
+const reviewsContainer = document.querySelector(`.${sectionClassName}`);
 
 const initReviewsSlider = () => {
-  duplicateSlides();
+  if (reviewsContainer) {
+    return new Swiper(`[data-slider-wrapper="${sectionClassName}"]`, {
+      grabCursor: true,
+      speed: 600,
+      slidesPerView: 1,
+      spaceBetween: 50,
 
-  const swiper = new Swiper('.reviews__slider-wrapper', {
-    grabCursor: true,
-    speed: 600,
-    slidesPerView: 1,
-    spaceBetween: 50,
+      navigation: {
+        prevEl: `[data-slider-prev-button="${sectionClassName}"]`,
+        nextEl: `[data-slider-next-button="${sectionClassName}"]`,
+      },
+    });
+  }
 
-    navigation: {
-      prevEl: '#prev-review-button',
-      nextEl: '#next-review-button',
-    },
-  });
+  return null;
 };
 
 export {initReviewsSlider};

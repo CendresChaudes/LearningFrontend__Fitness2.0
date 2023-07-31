@@ -1,45 +1,45 @@
 import Swiper from '../../vendor/swiper';
 
-const sliderList = document.querySelector('.coaches .slider__list');
-const sliderItems = document.querySelectorAll('.coaches .slider__item');
-
-const duplicateSlides = () => sliderList.append(...Array.from(sliderItems).map((item) => item.cloneNode(true)));
+const sectionClassName = 'coaches';
+const coachesContainer = document.querySelector(`.${sectionClassName}`);
 
 const initCoachesSlider = () => {
-  duplicateSlides();
+  if (coachesContainer) {
+    return new Swiper(`[data-slider-wrapper="${sectionClassName}"]`, {
+      grabCursor: true,
+      loop: true,
+      speed: 600,
 
-  const swiper = new Swiper('.coaches__slider-wrapper', {
-    grabCursor: true,
-    loop: true,
-    speed: 600,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 162,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 107,
+        },
+        1366: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
 
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
+      navigation: {
+        prevEl: `[data-slider-prev-button="${sectionClassName}"]`,
+        nextEl: `[data-slider-next-button="${sectionClassName}"]`,
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      900: {
-        slidesPerView: 2,
-        spaceBetween: 162,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 107,
-      },
-      1366: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-    },
+    });
+  }
 
-    navigation: {
-      prevEl: '#prev-coach-button',
-      nextEl: '#next-coach-button',
-    },
-  });
+  return null;
 };
 
 export {initCoachesSlider};

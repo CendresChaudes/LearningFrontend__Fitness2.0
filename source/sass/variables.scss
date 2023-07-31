@@ -12,7 +12,7 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 
 $color-black-russian:               #030a1a;
 $color-grey:                        #787878;
-$color-light-slate-grey:            #74819C;
+$color-light-slate-grey:            #74819c;
 $color-spindle:                     #b6bdcc;
 $color-whisper:                     #e8e8e8;
 $color-ghost-white:                 #f8f9fc;
@@ -31,19 +31,21 @@ $color-crimson:                     #d10a42;
 $crimson-to-cobalt:                 linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 $crimson-to-cobalt-alt:             linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
 $torch-red-to-cobalt:               linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-$dark-cerulean-to-venetian-red:     conic-gradient(from 182deg at 33% 34%, #003D85 0deg, #B80027 313deg, #003D85 360deg);
+$dark-cerulean-to-venetian-red:     conic-gradient(from 182deg at 33% 34%, #003d85 0deg, #b80027 313deg, #003d85 360deg);
 
 // Typography
 // ---------------------------------
 
 // переменная используемая в html для подключения скейлинга
+
 $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-alumni-sans:                    "Alumni Sans", "Gill Sans", "Arial",sans-serif;
 
-$ff-roboto-condensed:               "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+$ff-alumni-sans:                    "Alumni Sans", "Candara", "Arial", sans-serif;
+
+$ff-roboto-condensed:               "Roboto Condensed", "Trebuchet MS", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

@@ -46,7 +46,7 @@
 
   &__slider-item {
     &:hover {
-      & > .coaches__slide-content > * {
+      & .coaches__slide-content > * {
         display: block;
       }
 

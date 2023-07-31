@@ -1,17 +1,19 @@
-const videoWrapper = document.querySelector('.gym__video-wrapper');
-const playButton = document.querySelector('.gym__video-button');
+const videoContainer = document.querySelector('.video');
+const videoPlay = document.querySelector('.video [data-video=play]');
 
 export const initPlayer = () => {
-  window.YT.ready(function () {
-    const player = new window.YT.Player('player', {
-      videoId: '9TZXsZItgdw',
+  if (videoContainer) {
+    window.YT.ready(function () {
+      const player = new window.YT.Player('player', {
+        videoId: '9TZXsZItgdw',
+      });
+
+      const onPlayButtonClick = () => {
+        videoContainer.classList.add('is-active');
+        player.playVideo();
+      };
+
+      videoPlay.addEventListener('click', onPlayButtonClick);
     });
-
-    const onPlayButtonClick = () => {
-      videoWrapper.classList.add('is-active');
-      player.playVideo();
-    };
-
-    playButton.addEventListener('click', onPlayButtonClick);
-  });
+  }
 };

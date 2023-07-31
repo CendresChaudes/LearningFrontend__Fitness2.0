@@ -10,18 +10,8 @@
   }
 
   &__container {
-    width: 100%;
-    max-width: 1366px;
-    margin: 0 auto;
-    padding: 0 103px;
-
-    @include vp-1199 {
-      padding: 0 45px;
-    }
-
     @include vp-767 {
       max-width: 500px;
-      padding: 0 15px;
     }
   }
 
@@ -166,15 +156,18 @@
   &__datetime-secondary-value-wrapper {
     display: inline-block;
     margin: 5px 0 0 0;
-  }
 
-  &__datetime-secondary-value {
-    display: block;
+    p {
+      margin: 0 0 4px 0;
+      font-size: 14px;
 
-    font-size: 14px;
+      @include vp-1199 {
+        font-size: 10px;
+      }
 
-    @include vp-1199 {
-      font-size: 10px;
+      &:last-of-type {
+        margin: 0;
+      }
     }
   }
 
