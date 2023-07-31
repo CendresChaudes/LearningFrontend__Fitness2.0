@@ -2930,13 +2930,13 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 85px 78px;
+  padding: 82px 78px;
   color: #ffffff;
   background-color: #ed0233;
 }
 @media (max-width: 1199px) {
   .announcement__content {
-    padding: 50px 45px;
+    padding: 48px 45px;
   }
 }
 .announcement__content p {

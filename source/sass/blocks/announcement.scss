@@ -45,14 +45,14 @@
   &__content {
     display: flex;
     flex-direction: column;
-    padding: 85px 78px;
+    padding: 82px 78px;
 
     color: $color-default-white;
 
     background-color: $color-torch-red;
 
     @include vp-1199 {
-      padding: 50px 45px;
+      padding: 48px 45px;
     }
 
     p {
