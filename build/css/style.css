@@ -2258,6 +2258,7 @@ button,
 @media (max-width: 1365px) {
   .hero__wrapper img {
     width: 440px;
+    height: auto;
   }
 }
 @media (max-width: 1199px) {
