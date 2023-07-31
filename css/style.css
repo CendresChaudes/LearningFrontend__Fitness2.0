@@ -3710,6 +3710,10 @@ button,
     font-size: 10px;
   }
 
+  .announcement__datetime-secondary-value-wrapper p:last-of-type {
+    margin: 0;
+  }
+
   .announcement__link {
     min-height: 41px;
     padding: 14px;
