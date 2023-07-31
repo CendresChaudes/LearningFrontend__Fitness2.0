@@ -28,11 +28,13 @@
     );
     background-size: 287px 494px;
 
-    @include retina {
-      background-image: image-set(
-        url("../img/content/subscriptions/plates-desktop.webp") type("image/webp"),
-        url("../img/content/subscriptions/plates-desktop.png") type("image/png")
-      );
+    @media (min-width: $vp-1200) {
+      @include retina {
+        background-image: image-set(
+          url("../img/content/subscriptions/plates-desktop.webp") type("image/webp"),
+          url("../img/content/subscriptions/plates-desktop.png") type("image/png")
+        );
+      }
     }
 
     @include vp-1199 {
