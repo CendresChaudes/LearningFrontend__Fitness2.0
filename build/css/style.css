@@ -2979,7 +2979,7 @@ button,
     -webkit-column-gap: 33px;
        -moz-column-gap: 33px;
             column-gap: 33px;
-    row-gap: 12px;
+    row-gap: 10px;
   }
 }
 .announcement__title {
@@ -3015,7 +3015,7 @@ button,
 }
 @media (max-width: 1199px) {
   .announcement__datetime-title {
-    margin: 0 0 1px 0;
+    margin: 0 0 4px 0;
     font-size: 12px;
   }
 }
@@ -3032,14 +3032,14 @@ button,
 }
 @media (max-width: 1199px) {
   .announcement__datetime-main-value {
-    margin: 2px 0 0 0;
+    margin: 0;
     font-size: 24px;
     vertical-align: top;
   }
 }
 .announcement__datetime-secondary-value-wrapper {
   display: inline-block;
-  margin: 5px 0 0 0;
+  margin: 2px 0 0 0;
 }
 .announcement__datetime-secondary-value-wrapper p {
   margin: 0 0 4px 0;
@@ -3052,6 +3052,11 @@ button,
 }
 .announcement__datetime-secondary-value-wrapper p:last-of-type {
   margin: 0;
+}
+@media (max-width: 1199px) {
+  .announcement__datetime-secondary-value-wrapper p:last-of-type {
+    margin: 0;
+  }
 }
 .announcement__link {
   width: 100%;

@@ -90,7 +90,7 @@
       margin: 0 0 9px 0;
 
       column-gap: 33px;
-      row-gap: 12px;
+      row-gap: 10px;
     }
   }
 
@@ -125,7 +125,7 @@
     font-size: 18px;
 
     @include vp-1199 {
-      margin: 0 0 1px 0;
+      margin: 0 0 4px 0;
 
       font-size: 12px;
     }
@@ -146,7 +146,7 @@
     line-height: 1;
 
     @include vp-1199 {
-      margin: 2px 0 0 0;
+      margin: 0;
 
       font-size: 24px;
       vertical-align: top;
@@ -155,7 +155,7 @@
 
   &__datetime-secondary-value-wrapper {
     display: inline-block;
-    margin: 5px 0 0 0;
+    margin: 2px 0 0 0;
 
     p {
       margin: 0 0 4px 0;
@@ -167,6 +167,10 @@
 
       &:last-of-type {
         margin: 0;
+
+        @include vp-1199 {
+          margin: 0;
+        }
       }
     }
   }
