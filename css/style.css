@@ -1363,7 +1363,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Trebuchet MS", "Arial", sans-serif;
   color: #102654;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1657,11 +1657,11 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Trebuchet MS", "Arial", sans-serif;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid rgba(255, 255, 255, 0);
-  border-bottom: 1px solid #74819C;
+  border-bottom: 1px solid #74819c;
 }
 
 .input input.focus-visible:focus {
@@ -1698,7 +1698,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Trebuchet MS", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1706,7 +1706,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Trebuchet MS", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1714,7 +1714,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Trebuchet MS", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1722,7 +1722,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Trebuchet MS", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1730,7 +1730,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: normal;
-  font-family: "Roboto Condensed", "Gill Sans", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Trebuchet MS", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1762,27 +1762,19 @@ button,
   border: 1px solid rgba(34, 178, 89, 0.5);
 }
 
-.input .input-message {
+.input-message {
   position: absolute;
   font-size: 14px;
   left: 0;
   bottom: -20px;
 }
 
-.input .input-message.is-invalid {
+.input-message.is-invalid {
   color: #ff121f;
 }
 
-.input .input-message.is-valid {
+.input-message.is-valid {
   color: #22b259;
-}
-
-.logo.focus-visible:focus {
-  opacity: 0.8;
-}
-
-.logo:active:not(.focus-visible) {
-  opacity: 0.5;
 }
 
 .link {
@@ -1823,12 +1815,20 @@ button,
   pointer-events: none;
 }
 
+.logo.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.logo:active:not(.focus-visible) {
+  opacity: 0.5;
+}
+
 .title {
   margin: 0;
   font-weight: 600;
   font-size: 54px;
   line-height: normal;
-  font-family: "Alumni Sans", "Gill Sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Candara", "Arial", sans-serif;
   letter-spacing: 1.44px;
 }
 
@@ -1891,6 +1891,76 @@ button,
   transform: rotate(180deg);
 }
 
+.video.is-active .video__preview {
+  display: none;
+}
+
+.video__preview {
+  position: relative;
+  display: inline-block;
+}
+
+.video__preview::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../img/content/gym/play-button-default.svg");
+  border: none;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+
+.video__play.focus-visible:focus {
+  background-image: url("../img/content/gym/play-button-state-action.svg");
+  outline: none;
+}
+
+.video__play:active:not(.focus-visible) {
+  background-image: url("../img/content/gym/play-button-state-action.svg");
+}
+
+.video__play:disabled {
+  background-image: url("../img/content/gym/play-button-state-action.svg");
+  opacity: 0.4;
+}
+
+.video.is-active .video__player {
+  display: block;
+}
+
+.video__player {
+  display: none;
+  width: 364px;
+  height: 228px;
+  border: none;
+}
+
 .main__free-lesson-contacts-wrapper {
   display: -ms-grid;
   display: grid;
@@ -1926,7 +1996,7 @@ button,
   font-weight: 600;
   font-size: 26px;
   line-height: normal;
-  font-family: "Alumni Sans", "Gill Sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Candara", "Arial", sans-serif;
   color: #ffffff;
   letter-spacing: 0.78px;
 }
@@ -2050,7 +2120,7 @@ button,
 
 .hero {
   padding: 51px 0;
-  background-image: conic-gradient(from 182deg at 33% 34%, #003D85 0deg, #B80027 313deg, #003D85 360deg);
+  background-image: conic-gradient(from 182deg at 33% 34%, #003d85 0deg, #b80027 313deg, #003d85 360deg);
 }
 
 .hero__wrapper {
@@ -2090,7 +2160,7 @@ button,
   margin: 118px 54px 15px 0;
   font-weight: 600;
   font-size: 40px;
-  font-family: "Alumni Sans", "Gill Sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Candara", "Arial", sans-serif;
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 1.44px;
@@ -2100,7 +2170,7 @@ button,
   margin: 0 0 50px 0;
   font-weight: 600;
   font-size: 92px;
-  font-family: "Alumni Sans", "Gill Sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Candara", "Arial", sans-serif;
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 4.6px;
@@ -2149,13 +2219,6 @@ button,
   padding: 120px 0;
 }
 
-.gym__container {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 0 103px;
-}
-
 .gym__wrapper {
   display: -ms-grid;
   display: grid;
@@ -2188,78 +2251,9 @@ button,
   letter-spacing: -1px;
 }
 
-.gym .is-active .gym__player {
-  display: block;
-}
-
-.gym .is-active .gym__video-preview {
-  display: none;
-}
-
-.gym__video-wrapper {
+.gym__video {
   margin: -114px 0 0 -65px;
   height: 228px;
-}
-
-.gym__video-wrapper .gym__player {
-  display: none;
-  width: 364px;
-  height: 228px;
-  border: none;
-}
-
-.gym__video-preview {
-  position: relative;
-  display: inline-block;
-}
-
-.gym__video-preview::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(20, 54, 122, 0.5);
-}
-
-.gym__video-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  z-index: 5;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: url("../img/content/gym/play-button-default.svg");
-  border: none;
-  border-radius: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  cursor: pointer;
-}
-
-.gym__video-button.focus-visible:focus {
-  background-image: url("../img/content/gym/play-button-state-action.svg");
-}
-
-.gym__video-button:active:not(.focus-visible) {
-  background-image: url("../img/content/gym/play-button-state-action.svg");
-}
-
-.gym__video-button:disabled {
-  background-image: url("../img/content/gym/play-button-state-action.svg");
-  opacity: 0.4;
 }
 
 .subscriptions {
@@ -2466,13 +2460,6 @@ button,
   padding: 120px 0 107px 0;
 }
 
-.announcement__container {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 0 103px;
-}
-
 .announcement__wrapper {
   display: -ms-grid;
   display: grid;
@@ -2496,7 +2483,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 85px 78px;
+  padding: 82px 78px;
   color: #ffffff;
   background-color: #ed0233;
 }
@@ -2531,7 +2518,7 @@ button,
   font-weight: 600;
   font-size: 82px;
   line-height: 96%;
-  font-family: "Alumni Sans", "Gill Sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Candara", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2.46px;
@@ -2561,9 +2548,13 @@ button,
   margin: 5px 0 0 0;
 }
 
-.announcement__datetime-secondary-value {
-  display: block;
+.announcement__datetime-secondary-value-wrapper p {
+  margin: 0 0 4px 0;
   font-size: 14px;
+}
+
+.announcement__datetime-secondary-value-wrapper p:last-of-type {
+  margin: 0;
 }
 
 .announcement__link {
@@ -2590,7 +2581,7 @@ button,
   overflow: hidden;
 }
 
-.coaches__slider-item:hover > .coaches__slide-content > * {
+.coaches__slider-item:hover .coaches__slide-content > * {
   display: block;
 }
 
@@ -2674,12 +2665,6 @@ button,
 .advantages {
   padding: 108px 0 129px 0;
   background-color: #f8f9fc;
-}
-
-.advantages__container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 103px;
 }
 
 .advantages__title {
@@ -3358,7 +3343,7 @@ button,
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #74819C;
+  background-color: #74819c;
 }
 
 .contacts__item {
@@ -3499,6 +3484,11 @@ button,
     letter-spacing: 1.26px;
   }
 
+  .video__player {
+    width: 266px;
+    height: 167px;
+  }
+
   .main__free-lesson-contacts-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3574,10 +3564,6 @@ button,
     padding: 100px 0;
   }
 
-  .gym__container {
-    padding: 0 45px;
-  }
-
   .gym__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3620,7 +3606,7 @@ button,
     text-align: center;
   }
 
-  .gym__video-wrapper {
+  .gym__video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3629,11 +3615,6 @@ button,
     justify-content: center;
     margin: -84px 0 0 0;
     height: auto;
-  }
-
-  .gym__video-wrapper .gym__player {
-    width: 266px;
-    height: 167px;
   }
 
   .subscriptions {
@@ -3683,17 +3664,13 @@ button,
     padding: 98px 0 100px 0;
   }
 
-  .announcement__container {
-    padding: 0 45px;
-  }
-
   .announcement__wrapper {
     max-width: 915px;
     margin: 0 auto;
   }
 
   .announcement__content {
-    padding: 50px 45px;
+    padding: 48px 45px;
   }
 
   .announcement__content p {
@@ -3728,7 +3705,7 @@ button,
     vertical-align: top;
   }
 
-  .announcement__datetime-secondary-value {
+  .announcement__datetime-secondary-value-wrapper p {
     font-size: 10px;
   }
 
@@ -3758,10 +3735,6 @@ button,
 
   .advantages {
     padding: 88px 0;
-  }
-
-  .advantages__container {
-    padding: 0 45px;
   }
 
   .advantages__title {
@@ -4049,6 +4022,18 @@ button,
     height: 19px;
   }
 
+  .video__preview img {
+    width: 100vw;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .video__player {
+    width: 100vw;
+    height: 300px;
+  }
+
   .header {
     top: 15px;
   }
@@ -4196,20 +4181,8 @@ button,
     object-fit: cover;
   }
 
-  .gym__video-wrapper {
+  .gym__video {
     margin: 0;
-  }
-
-  .gym__video-wrapper .gym__player {
-    width: 100vw;
-    height: 300px;
-  }
-
-  .gym__video-preview img {
-    width: 100vw;
-    height: 300px;
-    -o-object-fit: cover;
-    object-fit: cover;
   }
 
   .subscriptions {
@@ -4268,7 +4241,6 @@ button,
 
   .announcement__container {
     max-width: 500px;
-    padding: 0 15px;
   }
 
   .announcement__wrapper {
@@ -4642,6 +4614,14 @@ button,
 }
 
 @media (max-width: 499px) {
+  .video__preview img {
+    height: 167px;
+  }
+
+  .video__player {
+    height: 167px;
+  }
+
   .footer__wrapper {
     max-width: none;
     margin: 0;
@@ -4649,14 +4629,6 @@ button,
 
   .gym__media-wrapper img {
     height: auto;
-  }
-
-  .gym__video-wrapper .gym__player {
-    height: 167px;
-  }
-
-  .gym__video-preview img {
-    height: 167px;
   }
 }
 
@@ -4686,16 +4658,21 @@ button,
     border: 1px solid rgba(34, 178, 89, 0.5);
   }
 
-  .logo:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-
   .link:hover:not(.focus-visible) {
     opacity: 0.7;
   }
 
+  .logo:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
   .slider__button:hover:not(.focus-visible) {
     border: 1px solid #102654;
+  }
+
+  .video__play:hover:not(.focus-visible) {
+    background-image: url("../img/content/gym/play-button-state-action.svg");
+    outline: none;
   }
 
   .header__phone:hover:not(.focus-visible) {
@@ -4713,10 +4690,6 @@ button,
 
   .footer__social-link:hover:not(.focus-visible) svg {
     fill: #ffffff;
-  }
-
-  .gym__video-button:hover:not(.focus-visible) {
-    background-image: url("../img/content/gym/play-button-state-action.svg");
   }
 
   .subscriptions__control:hover:not(.focus-visible) {
