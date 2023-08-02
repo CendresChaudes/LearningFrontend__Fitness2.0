@@ -1512,7 +1512,7 @@ button,
   background-color: #ffffff;
   outline: none;
 }
-.btn--white:active:not(.focus-visible) {
+.btn--white:active:not(.focus-visible):not(.focus-visible) {
   color: #102654;
 }
 .btn--white:disabled {
@@ -1542,7 +1542,7 @@ button,
   border-color: #ffffff;
   outline: none;
 }
-.btn--blue:active:not(.focus-visible) {
+.btn--blue:active:not(.focus-visible):not(.focus-visible) {
   color: rgba(255, 255, 255, 0.7);
 }
 .btn--blue:disabled {
@@ -1708,7 +1708,7 @@ button,
   text-decoration: none;
   outline: 1px solid #102654;
 }
-.link:active:not(.focus-visible) {
+.link:active:not(.focus-visible):not(.focus-visible) {
   text-decoration: underline;
   opacity: 1;
 }
@@ -1737,7 +1737,7 @@ button,
 .logo.focus-visible:focus {
   opacity: 0.8;
 }
-.logo:active:not(.focus-visible) {
+.logo:active:not(.focus-visible):not(.focus-visible) {
   opacity: 0.5;
 }
 
@@ -1802,10 +1802,10 @@ button,
   border: 1px solid #102654;
   outline: none;
 }
-.slider__button:active:not(.focus-visible) {
+.slider__button:active:not(.focus-visible):not(.focus-visible) {
   background-color: #102654;
 }
-.slider__button:active:not(.focus-visible) svg {
+.slider__button:active:not(.focus-visible):not(.focus-visible) svg {
   stroke: #ffffff;
 }
 .slider__button:disabled {
@@ -1893,7 +1893,7 @@ button,
   background-image: url("../img/content/gym/play-button-state-action.svg");
   outline: none;
 }
-.video__play:active:not(.focus-visible) {
+.video__play:active:not(.focus-visible):not(.focus-visible) {
   background-image: url("../img/content/gym/play-button-state-action.svg");
 }
 .video__play:disabled {
@@ -2017,7 +2017,7 @@ button,
 .header__phone.focus-visible:focus {
   opacity: 0.8;
 }
-.header__phone:active:not(.focus-visible) {
+.header__phone:active:not(.focus-visible):not(.focus-visible) {
   opacity: 0.5;
 }
 
@@ -2131,7 +2131,7 @@ button,
   text-decoration: none;
   outline: 1px solid #ffffff;
 }
-.footer__nav-link:active:not(.focus-visible) {
+.footer__nav-link:active:not(.focus-visible):not(.focus-visible) {
   text-decoration: none;
 }
 .footer__nav-link--disabled {
@@ -2198,7 +2198,7 @@ button,
 .footer__social-link.focus-visible:focus svg {
   fill: #ffffff;
 }
-.footer__social-link:active:not(.focus-visible) {
+.footer__social-link:active:not(.focus-visible):not(.focus-visible) {
   background-color: #102654;
 }
 .footer__social-link--disabled {
@@ -4091,7 +4091,7 @@ button,
 .faq__description a.focus-visible:focus {
   opacity: 0.8;
 }
-.faq__description a:active:not(.focus-visible) {
+.faq__description a:active:not(.focus-visible):not(.focus-visible) {
   opacity: 0.5;
 }
 
@@ -4616,7 +4616,7 @@ button,
 .contacts__item a.focus-visible:focus {
   opacity: 0.8;
 }
-.contacts__item a:active:not(.focus-visible) {
+.contacts__item a:active:not(.focus-visible):not(.focus-visible) {
   opacity: 0.5;
 }
 
