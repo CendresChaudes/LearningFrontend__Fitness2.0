@@ -3786,6 +3786,10 @@ button,
     width: 698px;
   }
 
+  .coaches__slider-item:hover .coaches__slide-content {
+    padding: 60px 48px 50px 48px;
+  }
+
   .coaches__slider-button--prev {
     left: calc((100% - 698px) / 2 - 11.21%);
   }
