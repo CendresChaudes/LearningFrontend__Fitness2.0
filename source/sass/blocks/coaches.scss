@@ -58,6 +58,10 @@
 
         transition: background-color $trans-default;
 
+        @include vp-1199 {
+          padding: 60px 48px 50px 48px;
+        }
+
         @include vp-767 {
           padding: 49px 29px 25px 29px;
         }

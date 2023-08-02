@@ -3166,6 +3166,11 @@ button,
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
+@media (max-width: 1199px) {
+  .coaches__slider-item:hover .coaches__slide-content {
+    padding: 60px 48px 50px 48px;
+  }
+}
 @media (max-width: 767px) {
   .coaches__slider-item:hover .coaches__slide-content {
     padding: 49px 29px 25px 29px;
