@@ -2549,7 +2549,7 @@ button,
     gap: 40px;
   }
   .gym__media-wrapper img {
-    height: 490px;
+    height: auto;
     width: 100vw;
     background-color: #dbdee8;
   }
