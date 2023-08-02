@@ -110,7 +110,9 @@
   }
 
   &__media-wrapper {
-    object-fit: cover;
+    img {
+      object-fit: cover;
+    }
 
     @include vp-767 {
       display: flex;
