@@ -17,7 +17,7 @@
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    min-width: 683px;
+    width: 683px;
     margin: 0 0 0 auto;
     padding: 0 170px 0 103px;
 
@@ -92,15 +92,7 @@
   &__submit {
     width: 100%;
     min-height: 55px;
-    margin: auto 0 0 0;
-
     font-size: 14px;
-
     border-width: 3px;
-
-    @include vp-767 {
-      max-width: 290px;
-      margin: 0 auto;
-    }
   }
 }

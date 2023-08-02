@@ -45,6 +45,7 @@
     & img {
       align-self: flex-end;
       width: 500px;
+      background-color: #000b2e;
 
       @include vp-1365 {
         width: 440px;
@@ -62,15 +63,8 @@
   }
 
   &__content {
-    position: relative;
-
     line-height: normal;
     color: $color-default-white;
-
-    @include vp-767 {
-      max-width: 350px;
-      margin: 0 auto;
-    }
 
     span {
       display: block;
@@ -124,7 +118,7 @@
 
     ul {
       position: absolute;
-      bottom: 190px;
+      bottom: 37px;
       left: -130px;
 
       display: flex;
@@ -137,12 +131,12 @@
       gap: 5px;
 
       @include vp-1199 {
-        bottom: 142px;
+        bottom: 24px;
         left: -136px;
       }
 
       @include vp-767 {
-        bottom: 118px;
+        bottom: 33px;
         left: -1px;
       }
     }
@@ -151,6 +145,15 @@
       font-weight: 400;
       font-size: 14px;
       text-align: right;
+    }
+  }
+
+  &__text-wrapper {
+    position: relative;
+
+    @include vp-767 {
+      max-width: 350px;
+      margin: 0 auto;
     }
   }
 

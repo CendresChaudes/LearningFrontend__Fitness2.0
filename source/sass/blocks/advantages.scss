@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding: 64px 0;
+    padding: 64px 0 56px 0;
   }
 
   &__container {
@@ -49,7 +49,7 @@
       display: flex;
       flex-direction: column;
 
-      gap: 38px;
+      gap: 40px;
       max-width: none;
     }
   }
@@ -102,6 +102,14 @@
         justify-content: end;
       }
     }
+
+    &--left {
+      padding: 0 0 0 19px;
+
+      @include vp-1199 {
+        padding: 0;
+      }
+    }
   }
 
   &__item-content {
@@ -132,7 +140,7 @@
     font-size: 71px;
     line-height: 0.8;
 
-    background: $crimson-to-cobalt-alt;
+    background-image: $crimson-to-cobalt-alt;
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
@@ -140,6 +148,10 @@
     @include vp-1199 {
       font-size: 58px;
       margin: 0 0 5px 0;
+    }
+
+    &--alt-gradient {
+      background-image: $crimson-to-cobalt-alt-mod;
     }
   }
 
@@ -188,7 +200,7 @@
 
     @include vp-767 {
       min-width: auto;
-      padding: 46px 45px;
+      padding: 43px 45px 48px 45px;
     }
   }
 

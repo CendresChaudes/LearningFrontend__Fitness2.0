@@ -68,6 +68,12 @@
       background-image: url("../img/content/gym/play-button-state-action.svg");
       opacity: 0.4;
     }
+
+    @include vp-1199 {
+      width: 73px;
+      height: 73px;
+      background-size: 73px 73px;
+    }
   }
 
   &.is-active .video__player {
