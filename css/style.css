@@ -2266,7 +2266,7 @@ button,
   font-size: 48px;
 }
 
-.gym__media-wrapper {
+.gym__media-wrapper img {
   -o-object-fit: cover;
   object-fit: cover;
 }
