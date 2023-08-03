@@ -1963,7 +1963,11 @@ button,
   border: none;
 }
 
-.main__free-lesson-contacts-wrapper {
+.header-hero-wrapper {
+  background-image: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
+}
+
+.free-lesson-contacts-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -1971,8 +1975,7 @@ button,
 }
 
 .header {
-  position: absolute;
-  top: 30px;
+  padding: 30px 0;
   width: 100%;
 }
 
@@ -1980,13 +1983,12 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .header__logo {
@@ -1998,6 +2000,7 @@ button,
 
 .header__phone {
   z-index: 1;
+  margin: 0 0 0 auto;
   font-weight: 600;
   font-size: 26px;
   line-height: normal;
@@ -2130,12 +2133,11 @@ button,
 }
 
 .hero {
-  padding: 51px 0;
-  background-image: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
+  padding: 0 0 51px 0;
 }
 
 .hero__wrapper {
-  margin: 0 52px 0 0;
+  margin: -42px 52px 0 0;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -3543,7 +3545,7 @@ button,
     height: 167px;
   }
 
-  .main__free-lesson-contacts-wrapper {
+  .free-lesson-contacts-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3551,6 +3553,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .header__wrapper {
+    gap: 20px;
   }
 
   .header__phone {
@@ -3577,11 +3583,11 @@ button,
   }
 
   .hero {
-    padding: 82px 0;
+    padding: 0 0 82px 0;
   }
 
   .hero__wrapper {
-    margin: 0;
+    margin: -7px 0 0 0;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -4096,7 +4102,11 @@ button,
   }
 
   .header {
-    top: 15px;
+    padding: 15px 0;
+  }
+
+  .header__wrapper {
+    gap: 15px;
   }
 
   .header__logo {
@@ -4151,7 +4161,7 @@ button,
   }
 
   .hero {
-    padding: 108px 0 47px 0;
+    padding: 60px 0 47px 0;
   }
 
   .hero__wrapper {
