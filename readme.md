@@ -14,4 +14,4 @@
 
 ---
 
-Ссылка на деплой: https://cendreschaudes.github.io/HTMLAcademy__Fitness2.0/
+Ссылка на деплой: https://cendreschaudes.github.io/LearningFrontend__Fitness2.0/
